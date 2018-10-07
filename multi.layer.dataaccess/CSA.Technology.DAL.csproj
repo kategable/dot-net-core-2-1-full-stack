@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSA.Technology.Core\CSA.Technology.Core.csproj" />
+    <ProjectReference Include="..\multi.layer.utility\CSA.Technology.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

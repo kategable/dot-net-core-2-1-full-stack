@@ -1,8 +1,7 @@
-﻿using System;
-using Flurl;
+﻿using Flurl;
 using Flurl.Http;
 
-namespace multy.layer.console
+namespace CSA.Technology.Console
 {
     class Program
     {
@@ -11,8 +10,8 @@ namespace multy.layer.console
             var result = "https://localhost:44341"
                 .AppendPathSegments("api")
                 .AppendPathSegments("values", 2).GetStringAsync().Result;
-            Console.WriteLine(result);
-            Console.ReadLine();
+            System.Console.WriteLine(result);
+            System.Console.ReadLine();
         }
     }
 }

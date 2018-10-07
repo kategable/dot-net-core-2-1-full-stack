@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using multi.layer.web.Facade;
+using CSA.Technology.Web.Facade;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace multi.layer.web.Pages

@@ -1,18 +1,17 @@
-﻿using multi.layer.utility;
-using System;
+﻿using CSA.Technology.Core;
 
-namespace multi.layer.dataaccess
+namespace CSA.Technology.DAL
 {
-    public class ValuesRepository : IValuesRepository
+    public class MessageRepository : IMessageRepository
     {
         private readonly IConfig _config;
 
-        public ValuesRepository(IConfig config)
+        public MessageRepository(IConfig config)
         {
             _config = config;
         }
 
-        public string GetById(int id)
+        public string GetMessage()
         {
             if (string.IsNullOrEmpty(_config.ConnectionString))
             {

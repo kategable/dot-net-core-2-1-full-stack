@@ -1,43 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using multy.layer.services;
+using CSA.Technology.Core;
 using Microsoft.AspNetCore.Mvc;
 
-namespace multi.layer.web.api.Controllers
+namespace CSA.Technology.Web.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class MessageController : ControllerBase
     {
-        private readonly IValuesService _service;
+        private readonly Core.IMessageService _service;
 
-        public ValuesController(IValuesService service)
+        public MessageController(Core.IMessageService service)
         {
             _service = service;
         }
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+       
 
         // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        [HttpGet] 
+        public ActionResult<string> Get()
         {
             try
             {
-                var result = _service.GetById(id);
-                return  result;
+                var result = _service.GetMessage();
+                return  Ok(result);
             }
             catch (Exception e)
             {
-                return NotFound(id);
-            }
-
-           
+                return StatusCode(500, "Internal server error");
+            }           
         }
 
         // POST api/values

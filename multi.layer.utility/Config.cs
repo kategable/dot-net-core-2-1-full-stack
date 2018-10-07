@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using CSA.Technology.Core;
+using Microsoft.Extensions.Configuration;
 
-namespace multi.layer.utility
+namespace CSA.Technology.Utility
 {
     public class Config : IConfig
     {

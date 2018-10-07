@@ -1,4 +1,4 @@
-using multi.layer.web.Facade;
+using CSA.Technology.Web.Facade;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace multi.layer.web
+namespace CSA.Technology.Web
 {
     public class Startup
     {

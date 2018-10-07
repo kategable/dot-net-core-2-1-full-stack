@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\multi.layer.web.api\multi.layer.web.api.csproj" />
+    <ProjectReference Include="..\multi.layer.web.api\CSA.Technology.Web.Api.csproj" />
   </ItemGroup>
 
 </Project>

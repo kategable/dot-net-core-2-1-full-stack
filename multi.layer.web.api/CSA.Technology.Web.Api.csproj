@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\multi.layer.services\multy.layer.services.csproj" />
-    <ProjectReference Include="..\multi.layer.utility\multi.layer.utility.csproj" />
+    <ProjectReference Include="..\multi.layer.services\CSA.Technology.Services.csproj" />
+    <ProjectReference Include="..\multi.layer.utility\CSA.Technology.Utility.csproj" />
   </ItemGroup>
 
 </Project>

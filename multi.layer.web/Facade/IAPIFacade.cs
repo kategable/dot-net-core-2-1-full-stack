@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace multi.layer.web.Facade
+namespace CSA.Technology.Web.Facade
 {
     public interface IApiFacade
     {

@@ -1,13 +1,14 @@
-﻿using multi.layer.dataaccess;
-using multy.layer.services;
+﻿using CSA.Technology.Core;
+using CSA.Technology.DAL;
+using CSA.Technology.Services;
+using CSA.Technology.Utility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using multi.layer.utility;
 
-namespace multi.layer.web.api
+namespace CSA.Technology.Web.Api
 {
     public class Startup
     {
@@ -23,8 +24,8 @@ namespace multi.layer.web.api
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
-            services.AddTransient<IValuesService, ValuesService>();
-            services.AddTransient<IValuesRepository, ValuesRepository>();
+            services.AddTransient<IMessageService, MessageService>();
+            services.AddTransient<IMessageRepository, MessageRepository>();
             services.AddTransient<IConfig, Config>(); 
         }
 

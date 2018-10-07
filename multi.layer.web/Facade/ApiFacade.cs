@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Flurl;
 using Flurl.Http;
 
-namespace multi.layer.web.Facade
+namespace CSA.Technology.Web.Facade
 {
     public class ApiFacade : IApiFacade
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace multi.layer.web.api
+namespace CSA.Technology.Web.Api
 {
     public class Program
     {
