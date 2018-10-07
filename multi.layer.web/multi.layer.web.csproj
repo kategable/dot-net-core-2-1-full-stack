@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="2.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Flurl">
+      <HintPath>..\..\..\Users\katesky\.nuget\packages\flurl\2.6.0\lib\netstandard1.3\Flurl.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl.Http">
+      <HintPath>..\..\..\Users\katesky\.nuget\packages\flurl.http\2.1.1\lib\netstandard1.3\Flurl.Http.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
