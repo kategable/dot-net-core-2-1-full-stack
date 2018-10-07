@@ -9,7 +9,7 @@ namespace CSA.Technology.Console
         {        
             var result = "https://localhost:44341"
                 .AppendPathSegments("api")
-                .AppendPathSegments("values", 2).GetStringAsync().Result;
+                .AppendPathSegments("message").GetStringAsync().Result;
             System.Console.WriteLine(result);
             System.Console.ReadLine();
         }

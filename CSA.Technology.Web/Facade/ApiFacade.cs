@@ -13,7 +13,7 @@ namespace CSA.Technology.Web.Facade
             {
                 var result = await "https://localhost:44341"
                     .AppendPathSegments("api")
-                    .AppendPathSegments("values", 2).GetStringAsync();
+                    .AppendPathSegments("message").GetStringAsync();
                 return result;
             }
             catch (Exception e)
