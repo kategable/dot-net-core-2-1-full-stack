@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CSA.Technology.Core\CSA.Technology.Core.csproj" />
-    <ProjectReference Include="..\multi.layer.utility\CSA.Technology.Utility.csproj" />
   </ItemGroup>
 
 </Project>

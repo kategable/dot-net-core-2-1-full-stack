@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CSA.Technology.Core\CSA.Technology.Core.csproj" />
+    <ProjectReference Include="..\CSA.Technology.DAL\CSA.Technology.DAL.csproj" />
+    <ProjectReference Include="..\CSA.Technology.Services\CSA.Technology.Services.csproj" />
+    <ProjectReference Include="..\CSA.Technology.Utility\CSA.Technology.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

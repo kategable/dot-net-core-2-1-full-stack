@@ -9,9 +9,9 @@ namespace CSA.Technology.Web.Api.Controllers
     [ApiController]
     public class MessageController : ControllerBase
     {
-        private readonly Core.IMessageService _service;
+        private readonly IMessageService _service;
 
-        public MessageController(Core.IMessageService service)
+        public MessageController(IMessageService service)
         {
             _service = service;
         }

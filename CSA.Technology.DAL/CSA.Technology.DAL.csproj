@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\multi.layer.dataaccess\CSA.Technology.DAL.csproj" />
+    <ProjectReference Include="..\CSA.Technology.Core\CSA.Technology.Core.csproj" />
   </ItemGroup>
 
 </Project>
